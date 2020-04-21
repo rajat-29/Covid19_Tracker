@@ -5,32 +5,30 @@ html,body {
 }
 
 .container {
-	height: 150vh;
+	height: 100vh;
 	display: flex;
     flex-direction: column;
-	align-items: center;
-	justify-content: center;
+    background-size: cover;
 }
 
 .main-title {
-    position: absolute;	
-    top: 5%;
+	width: 100%;
+	height: 18%;
+  	margin-top: 2%;
     color: white;	
     font-size: 45px;	
     letter-spacing: 6px;	
 }
 
 .select-country{
-	display: flex;
-    flex-direction: column;
-	align-items: center;
+	height: 30%;
 	width: 100%;
 }
 
 .country-name{
     width: 50%;
     padding: 20px;
-    border-radius: 35px;
+	border-radius: 35px;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -38,8 +36,9 @@ html,body {
 .country-results {
 	width: 100%;
 	display: flex;
-	margin-top: 10%;
+	margin-bottom: 1%;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .box {
@@ -62,4 +61,33 @@ html,body {
 .numbers {
 	font-size: 20px;
 	font-weight: bold;
+}
+
+@media (max-width:480px) {
+	
+	.container {
+		height: 100%;
+	}
+	
+    .main-title {
+  		margin-top: 5%;
+    	font-size: 25px;	
+    	letter-spacing: 4px;
+    	height: 12%;
+    }
+
+    .country-name{
+    	margin-top: 5%;
+		width: 80%;
+	}
+
+	.country-results {
+		flex-direction: column;
+		margin-top: 5%;
+	}
+
+	.box {
+        margin-bottom: 5%;
+        width: 60%;
+    }
 }
